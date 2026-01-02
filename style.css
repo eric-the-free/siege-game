@@ -1,0 +1,65 @@
+:root {
+  --bg: #0f1220;
+  --panel: rgba(10, 12, 20, 0.65);
+  --text: #e9eefc;
+  --muted: rgba(233, 238, 252, 0.75);
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  touch-action: none; /* important for iOS drag */
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hud {
+  position: fixed;
+  left: 12px;
+  top: 12px;
+  right: 70px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#hud .row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#hud .small {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+#restart {
+  position: fixed;
+  right: 12px;
+  top: 12px;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#restart:active {
+  transform: scale(0.98);
+}
