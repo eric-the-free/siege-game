@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Siege Blaster</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hud">
+    <div class="row">
+      <div><b>Level</b> <span id="level">1</span></div>
+      <div><b>Power</b> <span id="power">1.0x</span></div>
+      <div><b>Shots</b> <span id="shots">0</span></div>
+      <div><b>Destroyed</b> <span id="destroyed">0%</span></div>
+    </div>
+    <div class="row small">
+      Drag to aim • Release to fire • Tap 🔄 to restart level
+    </div>
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <button id="restart" aria-label="Restart level" title="Restart">🔄</button>
+
+  <script src="game.js"></script>
+</body>
+</html>
